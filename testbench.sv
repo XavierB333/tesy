@@ -245,5 +245,14 @@ module main_tb;
       
       #4 $finish;
     end
+	  
+	//Waveform
+    initial
+      begin
+        $dumpfile("main.vcd"); //File for wave form
+        $dumpvars(0, main_tb); //Specify scope to get rid of error message
+      end  
+  
+  
   
 endmodule
